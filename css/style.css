@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* header */
+header img {
+    height: 50px;
+    width: 50px;
+}
+
+header {
+    background-color: rgb(255, 160, 138);
+    height: 100px;
+    border-bottom: 3px solid rgb(0, 0, 0);
+}
+header nav ul {
+    display:flex ;
+    flex-direction:row;
+    justify-content:flex-start ;
+    column-gap: 40px;
+    padding: 20px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+/*.bodyhome{
+    background-image: url(../assets/shawnanggg-nmpW_WwwVSc-unsplash.jpg);
+    background-size: cover;
+    background-color: bisque;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100% ;
+} */
+body {
+    background-color: bisque;
+}
+.mainhome {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Añadido para centrar los elementos horizontalmente */
+    height: 100vh;
+}
+
+.mainhome section {
+    flex: 1;
+}
+
+.mainhome section .container-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Añadido para centrar los elementos verticalmente */
+}
+
+.mainhome section .container-flex .hijo {
+    width: 20%; /* Ajusta el ancho según tu preferencia */
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.mainhome section .container-flex .hijo img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.mainhome section .container-flex .hijo div {
+    text-align: center;
+}
+
+body .mainhome h1 {
+    font-size: 100px;
+}
+
+/* ... (otros estilos) */
+
+.mainhome section h2 {
+    margin-bottom: 20px; /* Ajusta el espaciado según tu preferencia */
+}
+
+.mainhome section .special-offers {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.mainhome section .offer {
+    width: 45%; /* Ajusta el ancho de cada oferta según tu preferencia */
+    margin: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.mainhome section .offer img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.mainhome section .offer h3 {
+    margin-top: 10px;
+}
+
+/* ... (otros estilos) */
+
+
+    
+
+
+
+
+
