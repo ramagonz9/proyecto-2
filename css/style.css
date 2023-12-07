@@ -1,4 +1,4 @@
-/* ... (otros estilos) */
+/*  otros estilos */
 * {
     margin: 0;
     padding: 0;
@@ -49,7 +49,7 @@ body {
 }
 .bodyhome .mainhome .info {
     display: flex;
-    flex-direction: column; /* Apilamos los elementos verticalmente */
+    flex-direction: column; 
     justify-content: space-between;
     align-items: center;
     color: rgb(241, 242, 248);
@@ -60,18 +60,18 @@ body {
 
 .bodyhome .mainhome .info .zeppelinb {
     display: flex;
-    flex-direction: row; /* Colocamos la imagen, el párrafo y el título en una fila */
+    flex-direction: row; 
     justify-content: space-between;
     align-items: center;
 }
 
 .bodyhome .mainhome .info img {
-    max-width: 100%; /* Asegura que la imagen no se extienda más allá de su contenedor */
-    margin-right: 20px; /* Ajusta el espacio entre la imagen y el texto según sea necesario */
+    max-width: 100%; 
+    margin-right: 20px; 
 }
 
 .bodyhome .mainhome .info .text {
-    flex-grow: 1; /* Permite que el texto ocupe el espacio restante en el contenedor */
+    flex-grow: 1; 
 }
 
 .bodyhome .mainhome .info h1 {
@@ -145,7 +145,7 @@ section .lasMasVendidas {
 section .lasMasVendidas h1 {
     font-size: 50px;
     color: rgb(255, 255, 255);
-    margin-bottom: 20px; /* Ajusta el espacio debajo del título */
+    margin-bottom: 20px; 
     margin-top: 30px;
     margin: 20px;
     
@@ -153,8 +153,8 @@ section .lasMasVendidas h1 {
 
 .mainhome section .card-container {
     display: flex;
-    justify-content: center; /* Centra las tarjetas dentro del contenedor */
-    gap: 20px; /* Ajusta el espacio entre las tarjetas */
+    justify-content: center; 
+    gap: 20px; 
 }
 
 section .card {
@@ -163,7 +163,7 @@ section .card {
 }
 
 section .card img {
-    width: 100%; /* Ajusta el tamaño de la imagen al 100% del contenedor */
+    width: 100%; 
     background-color: rgb(183, 107, 40);
 }
 
@@ -218,8 +218,7 @@ text-transform: uppercase;
     display: flex;
     flex-direction: column; 
     justify-content: center; 
-    align-items: center; /* Cambiado a "center" para centrar horizontalmente */
-    text-align: center; /* Añadido para centrar el texto horizontalmente */
+    align-items: center; 
     color: rgb(255, 255, 255);
     font-size: 20px;
 }
@@ -228,10 +227,10 @@ text-transform: uppercase;
     background-color: rgb(64, 24, 16); 
     color: rgb(255, 255, 255);
     font-size: 12px;
-    padding: 10px 45px; /* Ajustado el relleno para más espacio */
+    padding: 10px 45px; 
     border: 1px solid transparent;
     letter-spacing: 0.5px;
-    font-weight: 600px; /* Reemplazado "px" con "normal" */
+    font-weight: 600px; 
     border-radius: 8px;
     margin-top: 10px;
 }
@@ -317,9 +316,10 @@ footer p {
 .gitimg,
 .faceimg {
     height: 200px;
-    margin: 10px; /* Ajusta el margen según sea necesario */
+    margin: 10px; 
 }
-/* Consulta de medios para pantallas más pequeñas (tablets) */
+/* media */
+
 @media (max-width: 768px) {
     .mainrs {
         flex-direction: column;
