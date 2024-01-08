@@ -1,0 +1,32 @@
+header {
+    background-color: $color-primario;
+    height: 80px;
+    border-bottom: 3px solid $color-secundario;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+    nav{}
+    ul{
+        list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    padding: 20px;   
+    flex-direction: row; 
+        a{
+            transition:all 150ms;
+
+            img{
+                height: 45px;
+            }
+        }
+        a:hover {
+            transform: scale(1.30);    
+             
+        }
+        
+    }
+
+}
