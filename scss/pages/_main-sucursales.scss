@@ -1,0 +1,76 @@
+.contenido-principal {
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  .seccion1,
+  .seccion2 {
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  p {
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 200vh;
+  }
+  
+  .text {
+    font-size: 10vw;
+    margin: 0;
+    
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to right, #b6b6b6, #b6b6b6) no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 0%;
+    transition: background-size cubic-bezier(.1,.5,.5,1) 0.5s;
+    
+    border-bottom: 1px solid #2F2B28;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+  
+    &:hover {
+      background-size: 100%;
+    }
+  }
+  
+  span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #310101;
+    color: rgb(213, 82, 82);
+    
+    clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
+    transform-origin: center;
+    transition: all cubic-bezier(.1,.5,.5,1) 0.4s;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .text:hover > span {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  

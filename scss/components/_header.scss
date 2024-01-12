@@ -1,32 +1,35 @@
 header {
-    background-color: $color-primario;
+    @extend %estilos-base;
+    // background-color: $color-primario;
     height: 80px;
     border-bottom: 3px solid $color-secundario;
     display: flex;
     flex-direction: row;
     justify-content: space-between; 
     align-items: center;
-    nav{}
-    ul{
-        list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    justify-items: center;
-    padding: 20px;   
-    flex-direction: row; 
-        a{
-            transition:all 150ms;
-
-            img{
-                height: 45px;
+    nav{
+        ul{
+            @include flex(row, space-around, center);
+            // display: flex;
+            // justify-content: space-around;
+            // align-items: center;
+            // flex-direction: row; 
+            justify-items: center;
+            list-style-type: none;
+            padding: 20px;   
+            a{
+                transition:all 150ms;
+    
+                img{
+                    height: 45px;
+                }
             }
+            a:hover {
+                transform: scale(1.30);    
+                 
+            }
+            
         }
-        a:hover {
-            transform: scale(1.30);    
-             
-        }
-        
+    
     }
-
-}
+    }

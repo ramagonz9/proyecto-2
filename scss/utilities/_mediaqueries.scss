@@ -1,0 +1,102 @@
+@media screen and (max-width: 768px){
+
+    header {
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        nav{
+            display: flex;
+            justify-content: end;
+            ul{
+                width: 100%;
+                @include flex(column, space-between, center);
+                justify-items: center;
+                list-style-type: none;
+                padding: 20px;   
+                a{
+                    img{   
+                        height: 35px;
+                    }
+                }
+                a:hover {
+                    transform: scale(1.30);     
+                }
+            }
+            
+        }
+    }
+
+    .bodyhome{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.carrousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    background-color: rgb(115, 70, 70);
+    border-radius: 20px;
+    height: auto;
+    max-width: 100%;
+  }
+  
+  .carousel-inner {
+    width: 100%;
+    max-width: 80rem; // Ajusta según tus necesidades
+  }
+  
+  .info img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 1rem 0; // Ajusta según tus necesidades
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .carrousel {
+      padding: 3%;
+    }
+  
+    .info img {
+      margin: 1rem;
+    }
+  }
+
+  .mainrs {
+    background-color: blanchedalmond;
+    height: 763px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  
+    h1 {
+      text-decoration: none;
+      color: #333;
+    }
+  
+    .instimg,
+    .twittimg,
+    .gitimg,
+    .faceimg {
+      height: 200px;
+      margin: 10px;
+    }
+  
+    @media only screen and (max-width: 1024px) {
+      flex-direction: column;
+      height: auto;
+  
+      .instimg,
+      .twittimg,
+      .gitimg,
+      .faceimg {
+        height: 150px;
+      }
+    }
+  }
+  

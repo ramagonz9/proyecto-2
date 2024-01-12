@@ -1,0 +1,113 @@
+section {
+    .lasMasVendidas {
+      text-align: center;
+      margin: 0 auto;
+  
+      h1 {
+        font-size: 50px;
+        color: rgb(255, 255, 255);
+        margin-bottom: 20px;
+        margin-top: 30px;
+        margin: 20px;
+      }
+    }
+  
+    .mainhome {
+      section {
+        .card-container {
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+        }
+  
+        .card {
+          width: 200px;
+          text-align: center;
+  
+          img {
+            width: 100%;
+            background-color: rgb(183, 107, 40);
+          }
+  
+          p {
+            font-size: 15px;
+            color: rgb(255, 255, 255);
+          }
+  
+          .card-body {
+            background-color: rgb(255, 0, 0);
+            width: 200px;
+            display: flex;
+            justify-content: space-around;
+          }
+        }
+  
+        .Info {
+          h1 {
+            color: rgb(255, 255, 255);
+            text-align: center;
+          }
+        }
+      }
+    }
+  
+    .bodyhome {
+      #buttonver {
+        background-color: rgb(64, 24, 16);
+        color: rgb(255, 255, 255);
+        font-size: 12px;
+        padding: 5px 45px;
+        border: 1px solid transparent;
+        letter-spacing: 0.5px;
+        font-weight: 600;
+        border-radius: 8px;
+        margin-top: 10px;
+      }
+  
+      .boton {
+        display: flex;
+        justify-content: center;
+        color: rgb(229, 59, 24);
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+  
+      .Spoti {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+  
+        h1 {
+          font-size: 50px;
+          color: white;
+          padding-left: 50px;
+        }
+      }
+    }
+  
+    .bot2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: rgb(255, 255, 255);
+      font-size: 20px;
+  
+      button {
+        background-color: rgb(64, 24, 16);
+        color: rgb(255, 255, 255);
+        font-size: 12px;
+        padding: 10px 45px;
+        border: 1px solid transparent;
+        letter-spacing: 0.5px;
+        font-weight: 600;
+        border-radius: 8px;
+        margin-top: 10px;
+      }
+  
+      h1 {
+        font-size: 60px;
+      }
+    }
+  }
+  

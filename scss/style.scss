@@ -1,8 +1,25 @@
 @import "utilities/reset";
 @import "utilities/variables";
 @import "utilities/globals";
+@import "utilities/lists";
+@import "utilities/maps";
+@import "utilities/loops";
+@import "utilities/mixin";
+@import "utilities/extends";
+
 
 
 @import "components/header";
+@import "components/footer";
 
-@import "pages/main-index"
+@import "pages/main-index";
+@import "pages/main-nos";
+@import "pages/main-menu";
+@import "pages/main-rs";
+@import "pages/main-sucursales";
+@import "pages/index.scss";
+@import "pages/nos.scss";
+@import "pages/menu.scss";
+
+
+@import "utilities/mediaqueries";
