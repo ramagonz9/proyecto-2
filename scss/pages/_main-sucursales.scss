@@ -54,23 +54,3 @@
     }
   }
   
-  span {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #310101;
-    color: rgb(213, 82, 82);
-    
-    clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
-    transform-origin: center;
-    transition: all cubic-bezier(.1,.5,.5,1) 0.4s;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .text:hover > span {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-  }
-  

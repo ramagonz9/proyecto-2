@@ -17,7 +17,6 @@ header {
 }
 
 header {
-  height: 80px;
   border-bottom: 3px solid rgb(241, 242, 248);
   display: flex;
   flex-direction: row;
@@ -189,24 +188,6 @@ p {
   background-size: 100%;
 }
 
-span {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #310101;
-  color: rgb(213, 82, 82);
-  clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
-  transform-origin: center;
-  transition: all cubic-bezier(0.1, 0.5, 0.5, 1) 0.4s;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.text:hover > span {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-}
-
 section .lasMasVendidas {
   text-align: center;
   margin: 0 auto;
@@ -351,68 +332,116 @@ section .bot2 h1 {
   margin-bottom: 10px;
 }
 
-@media screen and (max-width: 768px) {
-  header {
-    height: 200px;
-    display: flex;
+header {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+header nav {
+  display: flex;
+}
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+header nav ul a img {
+  height: 35px;
+}
+header nav ul a:hover {
+  transform: scale(1.3);
+}
+
+@media only screen and (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
   }
-  header nav {
-    display: flex;
-    justify-content: end;
-  }
-  header nav ul {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    justify-items: center;
-    list-style-type: none;
-    padding: 20px;
-  }
-  header nav ul a img {
-    height: 35px;
-  }
-  header nav ul a:hover {
-    transform: scale(1.3);
-  }
-  .bodyhome {
-    display: flex;
-    flex-direction: column;
+  header nav ul a {
+    margin-bottom: 10px;
+    margin-left: 10px;
   }
 }
+.bodyhome {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainhome section .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(241, 242, 248);
+  margin-top: 20px;
+  padding-bottom: 50px;
+}
+.mainhome section .info .zeppelinb {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainhome section .info .zeppelinb img {
+  height: 500px;
+  margin-right: 30px;
+  border-radius: 20px;
+  margin-left: 30px;
+}
+.mainhome section .info .zeppelinb .text {
+  flex-grow: 1;
+}
+.mainhome section .info .zeppelinb .text h1 {
+  color: rgb(241, 242, 248);
+  margin-top: 20px;
+}
+.mainhome section .info .zeppelinb .text p {
+  color: rgb(241, 242, 248);
+  margin-top: 20px;
+  margin-right: 20px;
+  border-top: 2px solid;
+  padding: 20px;
+  font-size: 15px;
+  margin: 0px;
+}
+
 .carrousel {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5%;
+  padding: 50px;
   background-color: rgb(115, 70, 70);
+  border-radius: 30px;
+  height: 700px;
+  width: 1500px;
+}
+.carrousel .carousel-inner {
+  height: 600px;
+  width: 1000px;
+}
+.carrousel .info img {
+  height: 500px;
+  margin-right: 30px;
   border-radius: 20px;
-  height: auto;
-  max-width: 100%;
+  margin-left: 30px;
 }
-
-.carousel-inner {
-  width: 100%;
-  max-width: 80rem;
+@media only screen and (max-width: 1024px) {
+  .carrousel .carousel-inner {
+    height: 500px;
+    width: 800px;
+  }
 }
-
-.info img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin: 1rem 0;
-}
-
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .carrousel {
-    padding: 3%;
-  }
-  .info img {
-    margin: 1rem;
+    display: none;
   }
 }
+
 .mainrs {
   background-color: blanchedalmond;
   height: 763px;
